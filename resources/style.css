@@ -1,0 +1,183 @@
+* {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+}
+
+body {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(/img/background.webp);
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease;
+    color: #fff;
+    background-attachment: fixed;
+    font-family: "Bebas Neue", sans-serif;
+    overflow: hidden;
+}
+
+.citys {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+.cityBoxs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 20px;
+    height: auto;
+}
+
+.cityBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 18%; 
+    min-width: 200px; 
+}
+
+.main-div-child {
+    width: 25%;
+    margin-top: 20px;
+}
+
+.cityBox img {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    max-width: 1440px; 
+    margin: 0 auto;
+}
+
+.city {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.temperature,
+.humidity,
+.weather,
+.wind-speed {
+    font-size: 25px;
+}
+
+.image {
+    display: flex;
+    width: 60px;
+}
+
+select option {
+    background-color: darkgray;
+}
+
+select {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .cities{
+        flex-wrap: wrap; 
+    }
+    .time {
+        flex-wrap: wrap; 
+    }
+    .cityBoxs{
+        flex-wrap: wrap; 
+    }
+    .cityBox {
+        width: 22%;
+    }
+}
+
+@media (max-width: 992px) {
+    .cityBoxs{
+            flex-wrap: wrap; 
+    }
+    .cityBox {
+        width: 30%; 
+    
+    }
+
+    h2 {
+        font-size: 40px; 
+    }
+
+    .time {
+        font-size: 40px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .cityBoxs{
+            flex-wrap: wrap; 
+    }
+    .cityBox {
+        width: 45%; 
+    
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .time {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cityBoxs{
+            flex-wrap: wrap; 
+    }
+    .cityBox {
+        display: flex;
+        width: 100%;
+    
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .time {
+        font-size: 25px;
+    }
+}
